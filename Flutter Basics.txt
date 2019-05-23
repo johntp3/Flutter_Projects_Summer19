@@ -1,0 +1,26 @@
+flutter commands
+    flutter create "project name" // exclude ""
+    flutter run (--profile) // use w/n flutter file and --profile for final
+
+flutter folder structure
+    lib/main.dart: contains the main method for running apps
+    .idea: android studio file
+    android and ios: holds the native/source code
+    build: build source code
+    test: holds automated tests
+    pubspec.yaml: holds third party packages
+
+Stateless
+    Input Data (Data can change externally) --> widget
+    --> renders UI (gets re-rendered when Input Data changes)
+
+    Stateless Widgets: Constructor Function --> build()
+
+
+Stateful
+    Input Data (Data cann change externally) --> widget (internal state)
+    --> Render UI (gets re-rendered when Input Data or local State changes)
+
+    Stateful Widgets: Constructor Function --> initState() --> build() 
+    --> setState()         didUpdateWidget() ---------------|
+
